@@ -1,44 +1,45 @@
 <header class="gh-head">
     <nav class="gh-navbar inner">
         <div class="gh-navbar-left">
-            <a class="gh-nav-logo gh-navbar-item" href="https://marketplace.ghost.org">
+            <div class="gh-nav-logo gh-navbar-item">
+                <a href="https://ghost.org">
                 {% include /icons/ghost-logo.svg %}
-                <div class="gh-nav-logo-suffix">Marketplace</div></a>
-
+                </a>
+                <a class="gh-nav-logo-suffix" href="https://marketplace.ghost.org">Marketplace</a>
             </div>
-            <div class="gh-navbar-right">
-                <div class="gh-drop gh-more-drop">
-                    <a class="gh-navbar-btn gh-drop-trigger" href="#">
-                        <span>
-                            Collection
-                            {% include /icons/arrow_down.svg %}
-                        </span>
-                    </a>
-                    <div class="gh-dropdown">
-                        <li><a href="#" class="selected-tag active">All<span>{% include /icons/checkmark.svg %}</span></a></li>
-                        {% for tag in site.tags %}
-                        <li><a href="#" class="selected-tag">{{tag[0]}}<span>{% include /icons/checkmark.svg %}</span></a></li>
-                        {% endfor %}
-                    </div>
+        </div>
+        <div class="gh-navbar-right">
+            <div class="gh-drop gh-more-drop">
+                <a class="gh-navbar-btn gh-drop-trigger" href="#">
+                    <span>
+                        Collection
+                        {% include /icons/arrow_down.svg %}
+                    </span>
+                </a>
+                <div class="gh-dropdown">
+                    <li><a href="#" class="selected-tag active">All<span>{% include /icons/checkmark.svg %}</span></a></li>
+                    {% for tag in site.tags %}
+                    <li><a href="#" class="selected-tag">{{tag[0]}}<span>{% include /icons/checkmark.svg %}</span></a></li>
+                    {% endfor %}
                 </div>
-                <div class="gh-drop gh-more-drop">
-                    <a class="gh-navbar-btn gh-drop-trigger" href="#">
-                        <span>
-                            Price
-                            {% include /icons/arrow_down.svg %}
-                        </span>
-                    </a>
-                    <div class="gh-dropdown">
-                        <li><a href="#" class="selected-category active">All<span>{% include /icons/checkmark.svg %}</span></a></li>
-                        <li><a href="#" class="selected-category">Free<span>{% include /icons/checkmark.svg %}</span></a></li>
-                        <li><a href="#" class="selected-category">Paid<span>{% include /icons/checkmark.svg %}</span></a></li>
-                    </div>
-                </div>
-
-                <a class="gh-navbar-item" href="https://docs.ghost.org" target="_blank" rel="noopener">Docs</a>
-                <a class="gh-navbar-item" href="https://github.com/tryghost/marketplace" target="_blank" rel="noopener">Submit</a>
-                <a class="gh-navbar-btn gh-btn" href="https://ghost.org" id="signin-button"><span>Back to Ghost</span></a>
             </div>
+            <div class="gh-drop gh-more-drop">
+                <a class="gh-navbar-btn gh-drop-trigger" href="#">
+                    <span>
+                        Price
+                        {% include /icons/arrow_down.svg %}
+                    </span>
+                </a>
+                <div class="gh-dropdown">
+                    <li><a href="#" class="selected-category active">All<span>{% include /icons/checkmark.svg %}</span></a></li>
+                    <li><a href="#" class="selected-category">Free<span>{% include /icons/checkmark.svg %}</span></a></li>
+                    <li><a href="#" class="selected-category">Paid<span>{% include /icons/checkmark.svg %}</span></a></li>
+                </div>
+            </div>
+
+            <a class="gh-navbar-item" href="https://docs.ghost.org" target="_blank" rel="noopener">Docs</a>
+            <a class="gh-navbar-item" href="https://github.com/tryghost/marketplace" target="_blank" rel="noopener">Submit</a>
+            <a class="gh-navbar-btn gh-btn" href="https://ghost.org" id="signin-button"><span>Back to Ghost</span></a>
         </div>
     </nav>
 </header>
