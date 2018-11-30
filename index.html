@@ -21,6 +21,8 @@ layout: default
                         {{ featuredPost.title }}
                         {% if featuredPost.category == "paid" %}
                         <span> &mdash; ${{ featuredPost.price}} </span>
+                        {% else %}
+                        <span> &mdash; <span class="green">FREE</span> </span>
                         {% endif %}
                     </h4>
                     <p class="gh-theme-category">{{ featuredPost.tags[0] }}</p>
@@ -47,6 +49,8 @@ layout: default
                             {{ post.title }}
                             {% if post.category == "paid" %}
                             <span> &mdash; ${{ post.price}} </span>
+                            {% else %}
+                            <span> &mdash; <span class="green">FREE</span> </span>
                             {% endif %}
                         </h4>
                         <p class="gh-theme-category">{{ post.tags[0] }}</p>
